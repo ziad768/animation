@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div{
+    width: 150px;
+    height: 100px;
+    animation-duration: 4s;
+    animation-fill-mode: both;
+    position: absolute;
+    animation-name: mov;
+
+}
+
+@keyframes mov {
+    0%{
+        left: 0;
+        background-color: #7209b7;
+    }
+    25%{
+        left: 25%;
+        background-color: #3a0ca3 ;
+    }
+    50%{
+        left: 50%;
+        background-color: #4361ee ;
+    }
+    75%{
+        left: 75%;
+        background-color: #4cc9f0;
+    }
+    100%{
+        left: calc(100% - 150px);
+        background-color: #f72585;
+    }
+}
+
+.left{
+    background-color: #f72585;
+
+}
+.l2{
+    top: 220px;
+    animation-delay: 8s;
+}
+.l3{
+    top: 440px;
+    animation-delay: 16s;
+}
+.l4{
+    top: 660px;
+    animation-delay: 24s;
+}
+.right{
+    background-color: #4cc9f0;
+    right: 0;
+    animation-direction:reverse ;
+}
+.r1{
+    top: 110px;
+    animation-delay: 4s;
+}
+.r2{
+    top: 330px;
+    animation-delay: 12s;
+}
+.r3{
+    top: 550px;
+    animation-delay: 20s ;
+}
+.r4{
+    top: 770px;
+    animation-delay: 28s ;
+}
